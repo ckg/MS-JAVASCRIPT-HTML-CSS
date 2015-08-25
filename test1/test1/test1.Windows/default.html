@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>test1.Windows</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- test1.Windows references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <section style="margin-left:120px; margin-top:45px;">
+        <hgroup>
+            <h1>Markup</h1>
+            <h2>Demo</h2>
+        </hgroup>
+        <p>Favorites:</p>
+        <form onsubmit="ding.play(); return false;">
+            <input id="favUrl" type="url" required placeholder="www.ckg.com" />
+            <input type="submit" value="Save.." />
+        </form>
+        <audio src="/audio/ding.wav" id="ding"></audio>
+        <video controls="controls">
+            <source src="video/vaio.mp4" type="video/mp4" />
+        </video>
+    </section>
+    <p>Welcome on Visual studio 2015 with JS </p>
+    <button id="showMyName" onclick="showMyName()">showMyName</button>
+    <script type="text/javascript">
+        var MyName = "Christos";
+        function showMyName() {
+            document.write(MyName);
+        }
+    </script>
+</body>
+</html>
